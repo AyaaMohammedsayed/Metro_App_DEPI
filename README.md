@@ -22,19 +22,9 @@ With a focus on simplicity and ease of use, this app is perfect for daily commut
 
 Here are some of the key screenshots of the Metro Guide app:
 
-1. **Home Screen**
-   - The home screen displays the interactive map where users can select their starting and destination stations.
-   - ![Home Screen](assets/screenshots/home_screen.png)
+   - ![Home Screen](Metro mokeup.png)
 
-2. **Ticket Display**
-   - This screen shows the details of the ticket, including the selected route, price, metro line, and the number of stations between the starting and destination stations.
-   - ![Ticket Display](assets/screenshots/ticket_display.png)
 
-3. **Notification Alert**
-   - This screenshot shows the notification that will be sent to users when they are within 100 meters of their destination station.
-   - ![Notification Alert](assets/screenshots/notification_screen.png)
-
----
 
 ## Setup and Installation
 
