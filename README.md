@@ -20,9 +20,10 @@ With a focus on simplicity and ease of use, this app is perfect for daily commut
 
 ## Metro Application 
 
-Here are some of the key screenshots of the Metro Guide app:
 
-   - ![Home Screen](Metro mokeup.png)
+
+![Metro App](https://github.com/AyaaMohammedsayed/Metro_App_DEPI/blob/410c3e59ae532d460ec1d0567457ae0074c6355d/Metro%20mokeup.png)
+![Metro App](https://github.com/AyaaMohammedsayed/Metro_App_DEPI/blob/410c3e59ae532d460ec1d0567457ae0074c6355d/Metro%20mokeup.png)
 
 
 
