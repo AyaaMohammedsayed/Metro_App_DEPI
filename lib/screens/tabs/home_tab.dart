@@ -55,7 +55,7 @@ class HomeTab extends StatelessWidget {
                 height: 50,
                 child: ElevatedButton(
                   onPressed: () {
-                    Get.to(const SelectStationScreen());
+                    Get.to(SelectStationScreen());
                   },
                   child: const Text(
                     'Select Stations',
