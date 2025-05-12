@@ -1,23 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:metro_app/Notification/presentation/notification_settings.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:metro_app/screens/splash_screen.dart';
 
-void main() {
-  runApp(metroApp() );
-}
+void main() => runApp(const MetroGuideApp());
 
-class metroApp extends StatelessWidget {
-  const metroApp({super.key});
+class MetroGuideApp extends StatelessWidget {
+  const MetroGuideApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit (
-         designSize: Size(360, 690),
-         minTextAdapt: true,
-      builder: (context, child) => MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: NotificationSettings(),
-      ),
+    return const GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
     );
   }
 }
