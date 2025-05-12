@@ -1,0 +1,2 @@
+C:/office2010/First_app/first_app/android/app/.cxx/Debug/5v5q631i/x86/CMakeFiles/edit_cache.dir
+C:/office2010/First_app/first_app/android/app/.cxx/Debug/5v5q631i/x86/CMakeFiles/rebuild_cache.dir
