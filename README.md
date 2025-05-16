@@ -1,58 +1,121 @@
-<<<<<<< HEAD
-# metro_app
+[<h1 align="center">🚇 Cairo Metro App</h1>
 
-A new Flutter project.
+<p align="center">
+A smart bilingual mobile app for navigating Cairo’s metro system – available in <b>Native Android (Kotlin)</b> & <b>Flutter (Android & iOS)</b>.
+</p>
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# Metro_App_DEPI
-# Metro Guide App
-
-## Overview
-Metro Guide is an intuitive and user-friendly mobile application built with Flutter, designed to help users navigate metro stations efficiently. The app allows users to select their starting and destination stations, view nearby stations, check ticket prices based on the number of stations, and receive timely notifications when they approach their destination.
-
-With a focus on simplicity and ease of use, this app is perfect for daily commuters looking for a fast and reliable metro navigation tool.
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-blue" alt="Platform Badge"/>
+  <img src="https://img.shields.io/badge/Tech-Kotlin%20%7C%20Flutter%20%7C%20DFS-lightgrey" alt="Tech Badge"/>
+  <img src="https://img.shields.io/badge/Languages-Arabic%20%7C%20English-green" alt="Languages Badge"/>
+  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License Badge"/>
+</p>
 
 ---
 
-## Features
+## 🌟 Overview
 
-- **Station Selection**: Easily select your starting and destination stations using autocomplete search or dropdown menus.
-- **Nearest Station**: Shows the nearest metro stations based on your current location for quick access.
-- **Dynamic Ticket Pricing**: Ticket prices adjust based on the number of stations between your start and destination points.
-- **Notifications**: Get notified when you are 100 meters away from your destination station, helping you prepare to exit.
-- **Localization**: The app supports both Arabic and English languages, ensuring a seamless experience for users in different regions.
-- **Responsive Design**: The app is designed to work smoothly on both phone and tablet screens, with an adaptive layout for consistent user experience.
+Cairo Metro App is your personal companion to navigate Egypt's metro network with ease.  
+Supports **real-time navigation**, **route planning**, **ticket price estimation**, and more.  
+Built with performance in mind in **Kotlin** and **Flutter** to ensure a smooth and native experience across platforms.
 
 ---
 
-## Metro Application 
+## 🚀 Features
+
+- 🌐 **Bilingual**: Arabic and English interface
+- 📍 **Nearest Station** detection using GPS
+- 📌 **Suggest station near your destination**
+- 🗺️ **Map** to the nearest station
+- 🔁 **Multi-route options** between any two stations
+- 💸 **Ticket price, trip time**, and **number of stations**
+- 🚉 **Shortest path** or **least transfer** route
+- 🛰 **Real-time location tracking**
+- 🔔 **Trip alerts**: trip start, line change, nearing destination
+
+---
+
+## 🧠 Tech Stack
+
+### 🧭 DFS Algorithm  
+Used to compute shortest and optimal routes through the metro network.
+
+### 📱 Native Android (Kotlin)
+- Android Studio  
+- Fused Location Provider  
+- Air Location Library  
+- Groupie  
+- Shared Preferences  
+- Push Notifications  
+- Background Services  
+
+### 🌐 Flutter (Dart)
+- GetX  
+- Awesome Notifications  
+- Dartx  
+- Geolocator & Geocoding  
+- Get Storage  
+- Flutter Localization  
+- Flutter Background  
+- URL Launcher  
+
+---
+
+## 🖼️ Screenshots
+
+### 📱 Kotlin App (Android)
+
+| Home Page | All Routes | Live Tracking |
+|-----------|------------|---------------|
+| ![Home](https://i.postimg.cc/0Q91gVXP/image.png) | ![All Routes](https://i.postimg.cc/pTkbPK38/image.png) | ![Live Tracking](https://i.postimg.cc/7hQF2wHZ/image.png) |
+
+---
+
+### 🌐 Flutter App (Android & iOS)
+
+| Home Page | All Routes | Live Tracking |
+|-----------|------------|---------------|
+| ![Home](https://i.postimg.cc/NfB9Jtkz/image.png) | ![All Routes](https://i.postimg.cc/LXF6Jkyb/image.png) | ![Live Tracking](https://i.postimg.cc/L6Q9tFCf/image.png) |
 
 
+---
 
-![Metro App](https://github.com/AyaaMohammedsayed/Metro_App_DEPI/blob/410c3e59ae532d460ec1d0567457ae0074c6355d/Metro%20mokeup.png)
+## 🧩 How It Works
 
+1. 🔓 Grant location access
+2. 🗺 Choose origin and destination stations
+3. 📍 Get the nearest station or suggestions based on your address
+4. 📊 View trip details: time, price, path
+5. 🚨 Receive in-trip alerts and navigation instructions
 
+---
 
-## Setup and Installation
+## 💡 Future Ideas
 
-To get the Metro Guide app up and running on your local machine, follow these steps:
+- 🚦 Live metro timing/schedules  
+- 🎟 Online ticket purchasing  
+- 🙋 Voice assistant / accessibility  
+- 🗂 Favorite routes & saved trips  
+- ⭐ Rate lines & stations  
 
-### 1. Clone the Repository
+---
 
-Clone the project repository from GitHub:
+## 👨‍💻 Team Members
 
-```bash
-git clone https://github.com/your-username/metro-guide-app.git
->>>>>>> origin/main
+| 👤 Name            | 🛠️ Role             | 🔗 LinkedIn |
+|--------------------|----------------------|-------------|
+| **Ahmed Hesham Abdelfattah**      | Mobile Developer     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmed-hesham-108214234/) |
+| **Mahmoud Ahmed Fathy**  | Mobile Developer     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](linkedin.com/in/mahmoud-ahmed-fathy) |
+| **Mahmoud elsayed Rageh**    | Mobile Developer     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahmoud-ragehh/) |
+| **Aya Mohamed**    | Mobile Developer     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayamohamedsayed/) |
+| **Saif khaled haroun**    | Mobile Developer     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saif-haroun-711b482a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
+
+---
+
+## 🙏 Special Thanks
+Thanks to every team member who made this app a reality 🚇  
+We aim to keep improving public transportation tech in Egypt 🇪🇬
+
+---
+
+](https://www.linkedin.com/in/saif-haroun-711b482a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
