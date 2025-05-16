@@ -85,22 +85,10 @@ Whether you're a local or a visitor, the app offers **real-time navigation**, **
 
 1. 🔓 Grant location access to detect nearest station.
 2. 🚉 Choose your origin and destination.
-3. 💡 Get suggestions for the closest station to your current or destination location.
-4. 🧭 View route details: shortest/optimal path, total time, price, and number of stations.
-5. 🛎 Receive smart alerts during the trip (line changes, nearing final stop).
-6. 🎫 Display a digital ticket summarizing your trip details.
+3. 🧭 View route details: shortest/optimal path, total time, price, and number of stations.
+4. 🛎 Receive smart alerts during the trip (line changes, nearing final stop).
+5. 🎫 Display a digital ticket summarizing your trip details.
 
----
-
-## 💡 Future Enhancements
-
-- 🗣️ Voice assistant & accessibility support  
-- ⭐ Favorite routes & trip history  
-- 📍 Manual station selection from map  
-- 📤 Export trip plan as PDF or image  
-- 🔁 Multi-stop route planning
-
----
 
 ## 👨‍💻 Team Members
 
@@ -119,8 +107,4 @@ Whether you're a local or a visitor, the app offers **real-time navigation**, **
 Special thanks to every team member who contributed to making **Cairo Metro App** a reality!  
 Together, we’re one step closer to smarter public transportation in Egypt 🇪🇬
 
----
 
-## 📄 License
-
-This project is licensed under the **MIT License**.
