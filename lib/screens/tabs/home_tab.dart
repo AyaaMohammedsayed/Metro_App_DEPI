@@ -1,71 +1,82 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:metro_app/screens/select_station_screen.dart';
+
 import '../../widgets/action_buttons_row.dart';
-import '../../widgets/station_dropdown.dart';
 
 class HomeTab extends StatelessWidget {
-  HomeTab({super.key});
-  final items = ["New Marg", "El-Marg", "Ezbet El-Nakhl", "Ain Shams", "El-Matareya", "Helmeyet El-Zaitoun", "Hadayeq El-Zaitoun",
-    "Saray El-Qobba", "Hammamat El-Qobba", "Kobri El-Qobba", "Mansheyet El-Sadr", "El-Demerdash", "Ghamra",
-    "Al-Shohadaa", "Orabi", "Nasser", "Sadat", "Saad Zaghloul", "Al-Sayeda Zeinab", "El-Malek El-Saleh",
-    "Mar Girgis", "El-Zahraa", "Dar El-Salam", "Hadayek El-Maadi", "Maadi", "Sakanat El-Maadi", "Tora El-Balad",
-    "Kozzika", "Tura El-Esmant", "Elmasraa", "Hadayek Helwan", "Wadi Hof", "Helwan University", "Ain Helwan", "Helwan","Shubra Al Khaimah", "Koliet El-Zeraa", "Mezallat", "Khalafawy", "St. Teresa", "Rod El-Farag", "Masaraa",
-    "Al-Shohadaa", "Attaba", "Mohamed Naguib", "Sadat", "Opera", "Dokki", "El Bohouth", "Cairo University",
-    "Faisal", "Giza", "Omm El-Masryeen", "Sakiat Mekky", "El Monib",
-    "Adly Mansour", "Haykestep", "Omar Ibn El Khattab", "Qubaa", "Hesham Barakat", "El Nozha", "El Shams Club",
-    "Alf Maskan", "Heliopolis", "Haroun", "Al-Ahram", "Koleyet El-Banat", "Stadium", "Fair Zone", "Abbassiya",
-    "Abdou Pasha", "El-Geish", "Bab El Shaariya", "Attaba", "Nasser", "Maspero", "Safaa Hijazy", "Kit-Kat",
-    "Sudan", "Imbaba", "El-Bohy", "El-Qawmia", "Ring Road", "Rod El Farag Corridor"
-  ].obs;
+  const HomeTab({super.key});
+
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: SingleChildScrollView(
+      backgroundColor: const Color(0xFFF5F7FA),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              StationDropdown(
-                hint: 'Select departure station',
-                icon: const Icon(Icons.circle,
-                    size: 12, color: Colors.blueAccent),
-                items: items,
-              ),
-              const SizedBox(height: 8),
-              StationDropdown(
-                hint: 'Select destination station',
-                icon:
-                    const Icon(Icons.location_on, size: 16, color: Colors.red),
-                items: items,
-              ),
-              InteractiveViewer(
-                child: const Image(
-                  image: AssetImage('assets/metro_map-removebg-preview.png'),
+              const SizedBox(height: 20),
+
+         
+              const SizedBox(height: 30),
+
+              // بطاقة خريطة المحطة مع ظل و corners دائرية
+              Card(
+                elevation: 8,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                clipBehavior: Clip.hardEdge,
+                child: InteractiveViewer(
+                  boundaryMargin: const EdgeInsets.all(20),
+                  minScale: 0.5,
+                  maxScale: 3.0,
+                  child: Image.asset(
+                    'assets/metro_map-removebg-preview.png',
+                    height: screenHeight * 0.4,
+                    fit: BoxFit.contain ,
+                  ),
                 ),
               ),
-              const SizedBox(height: 8),
-              const SizedBox(height: 8),
-              const SizedBox(height: 8),
+
+              const SizedBox(height: 30),
+
               const ActionButtonsRow(),
-              const SizedBox(height: 8),
+
+              const Spacer(),
+
               SizedBox(
-                width: 180,
-                height: 50,
+                height: 56,
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue.shade700,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    elevation: 6,
+                    shadowColor: Colors.blue.shade300,
+                  ),
                   onPressed: () {
-                    Get.to(SelectStationScreen());
+                    Get.to(() =>  SelectStationScreen());
                   },
                   child: const Text(
                     'Select Stations',
                     style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white,
+                      letterSpacing: 1.1,
+                    ),
                   ),
                 ),
               ),
+
+              const SizedBox(height: 10),
             ],
           ),
         ),

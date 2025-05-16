@@ -4,30 +4,39 @@ import 'package:get/get.dart';
 class StationDropdown extends StatelessWidget {
   final String hint;
   final Icon icon;
-  final RxList items;
+  final RxList<String> items;
+  final RxString selectedStation;
 
   const StationDropdown({
     super.key,
     required this.hint,
     required this.icon,
     required this.items,
+    required this.selectedStation,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Obx(
-      () => DropdownMenu(menuHeight: 475,
+    return Obx(() {
+      return DropdownMenu<String>(
+        menuHeight: 475,
         enableSearch: true,
         enableFilter: true,
         width: double.infinity,
         hintText: hint,
         leadingIcon: icon,
         trailingIcon: const Icon(Icons.search),
-        selectedTrailingIcon: const Icon(Icons.search),
-        dropdownMenuEntries: [
-          for (var item in items) DropdownMenuEntry(value: item, label: item),
-        ],
-      ),
-    );
+        selectedTrailingIcon: const Icon(Icons.check),
+        initialSelection: selectedStation.value.isEmpty ? null : selectedStation.value,
+        onSelected: (value) {
+          if (value != null) {
+            selectedStation.value = value;
+          }
+        },
+        dropdownMenuEntries: items
+            .map((item) => DropdownMenuEntry(value: item, label: item))
+            .toList(),
+      );
+    });
   }
 }

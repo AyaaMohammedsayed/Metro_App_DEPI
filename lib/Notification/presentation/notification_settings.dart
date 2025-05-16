@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:metro_app/Notification/data/button.dart';
 import 'package:metro_app/Notification/logic/saved_data.dart';
+
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vibration/vibration.dart';
 
@@ -84,12 +85,21 @@ class _NotificationSettingsState extends State<NotificationSettings> {
                         activeTrackColor: Color(0xff007AFF),
                         inactiveThumbColor: Color(0xff007AFF),
                         inactiveTrackColor: Color(0xffffffff),
-                        onChanged:
-                            (value) => setState(() {
-                              isSwitchedAlret = value;
-                     
-                            }),
+                   onChanged: (value) async {
+  setState(() {
+    isSwitchedAlret = value;
+  });
+  await saveData(
+    isSwitchedSound: isSwitchedSound,
+    isSwitchedViberate: isSwitchedViberate,
+    isSwitchedAlret: isSwitchedAlret,
+  );
+},
+
+
+                            
                       ),
+                      
                     ],
                   ),
 
@@ -197,7 +207,7 @@ class _NotificationSettingsState extends State<NotificationSettings> {
                         activeTrackColor: Color(0xff007AFF),
                         inactiveThumbColor: Color(0xff007AFF),
                         inactiveTrackColor: Color(0xffffffff),
-                        onChanged: (value) {
+                        onChanged: (value) async {
                           setState(() {
                             isSwitchedViberate = value;
                         
@@ -205,6 +215,11 @@ class _NotificationSettingsState extends State<NotificationSettings> {
                           if (value) {
                             Vibration.vibrate(duration: 500);
                           }
+                            await saveData(
+    isSwitchedSound: isSwitchedSound,
+    isSwitchedViberate: isSwitchedViberate,
+    isSwitchedAlret: isSwitchedAlret,
+  );
                         },
                       ),
                     ],
@@ -244,6 +259,11 @@ class _NotificationSettingsState extends State<NotificationSettings> {
                           if (value) {
                             await player.play(AssetSource('sounds/sound.wav'));
                           }
+                            await saveData(
+    isSwitchedSound: isSwitchedSound,
+    isSwitchedViberate: isSwitchedViberate,
+    isSwitchedAlret: isSwitchedAlret,
+  );
                       
                         },
                       ),
@@ -254,9 +274,7 @@ class _NotificationSettingsState extends State<NotificationSettings> {
             ),
           ),
           SizedBox(height: 20.h),
-          buttonWidget(  isSwitchedSound: isSwitchedSound,
-                            isSwitchedViberate: isSwitchedViberate,
-                            isSwitchedAlret: isSwitchedAlret,),
+
         ],
       ),
     );

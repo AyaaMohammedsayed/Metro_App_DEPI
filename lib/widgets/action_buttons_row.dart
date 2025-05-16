@@ -21,12 +21,12 @@ class ActionButtonsRow extends StatelessWidget {
         CircleButton(
           icon: Icons.update,
           label: 'Updates',
-          onPressed: () => Get.to(() => const UpdateScreen()),
+          onPressed: () => Get.to(() => UpdateScreen()),
         ),
         CircleButton(
           icon: Icons.star,
-          label: 'Favorites',
-          onPressed: () => Get.to(() => const FavouriteScreen()),
+          label: 'Popular',
+          onPressed: () => Get.to(() => PopularScreen()),
         ),
       ],
     );

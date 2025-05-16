@@ -11,6 +11,7 @@ class HomeBottomNavigationBar extends StatelessWidget {
 
     return Obx(
       () => BottomNavigationBar(
+        backgroundColor: Colors.white,
         currentIndex: controller.currentIndex.value,
         onTap: controller.changePage,
         selectedItemColor: Colors.blue,

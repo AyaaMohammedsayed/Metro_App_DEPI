@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:metro_app/Notification/presentation/notification_settings.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppBar({super.key});
@@ -6,8 +8,9 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+       
       titleSpacing: 0,
-      backgroundColor: Colors.transparent,
+     backgroundColor: Colors.white,
       leading: Image.asset('assets/logo.png'),
       title: const Text(
         'Metro Guide',
@@ -20,7 +23,10 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         IconButton(
           icon: const Icon(Icons.notifications_none, size: 26),
-          onPressed: () {},
+          onPressed: () {
+       
+            Get.to(() => const NotificationSettings());
+          },
         ),
       ],
     );

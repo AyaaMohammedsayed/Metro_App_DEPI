@@ -9,7 +9,10 @@ class UpdateScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+            backgroundColor: Color.fromARGB(255, 244, 240, 240),
+      appBar: AppBar(
+         backgroundColor: Colors.white,
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16),
