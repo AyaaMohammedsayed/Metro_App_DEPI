@@ -1,7 +1,7 @@
-[<h1 align="center">🚇 Cairo Metro App</h1>
+<h1 align="center">🚇 Cairo Metro App</h1>
 
 <p align="center">
-A smart bilingual mobile app for navigating Cairo’s metro system – available in <b>Native Android (Kotlin)</b> & <b>Flutter (Android & iOS)</b>.
+A smart bilingual mobile app to navigate Cairo’s metro system – built with <b>Kotlin</b> and <b>Flutter</b> for both Android and iOS platforms.
 </p>
 
 <p align="center">
@@ -15,107 +15,112 @@ A smart bilingual mobile app for navigating Cairo’s metro system – available
 
 ## 🌟 Overview
 
-Cairo Metro App is your personal companion to navigate Egypt's metro network with ease.  
-Supports **real-time navigation**, **route planning**, **ticket price estimation**, and more.  
-Built with performance in mind in **Kotlin** and **Flutter** to ensure a smooth and native experience across platforms.
+**Cairo Metro App** is your intelligent companion for navigating Egypt’s metro network.  
+Whether you're a local or a visitor, the app offers **real-time navigation**, **shortest route planning**, **trip notifications**, and much more – all with a smooth and intuitive interface.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-- 🌐 **Bilingual**: Arabic and English interface
-- 📍 **Nearest Station** detection using GPS
-- 📌 **Suggest station near your destination**
-- 🗺️ **Map** to the nearest station
-- 🔁 **Multi-route options** between any two stations
-- 💸 **Ticket price, trip time**, and **number of stations**
-- 🚉 **Shortest path** or **least transfer** route
-- 🛰 **Real-time location tracking**
-- 🔔 **Trip alerts**: trip start, line change, nearing destination
+- 🌐 **Bilingual Support**: Seamless switch between Arabic & English.
+- 📍 **Nearest Station Detection**: Uses GPS to detect your closest metro station.
+- 🎯 **Smart Suggestions**: Recommends the station closest to your destination.
+- 🗺 **Map View**: Integrated with Google Maps to visualize nearby stations.
+- 🔁 **Multiple Route Options**: Choose between shortest distance or fewest transfers.
+- ⏱ **Trip Info**: Displays travel time, number of stations, and transfer lines.
+- 💸 **Ticket Price Estimation**: Auto-calculates based on the journey distance.
+- 🛰 **Live Location Tracking**: Track your progress along the route.
+- 🔔 **Smart Trip Alerts**:
+  - Start trip notification  
+  - Line change reminders  
+  - Approaching destination alerts
+- 🎫 **Digital Ticket Screen**: View your trip summary in a clean, printable format.
+- 📶 **Offline Availability**: Major features work without active internet.
 
 ---
 
 ## 🧠 Tech Stack
 
-### 🧭 DFS Algorithm  
-Used to compute shortest and optimal routes through the metro network.
+### 🔍 Pathfinding
+- **DFS (Depth-First Search)** algorithm for exploring and computing optimal routes.
 
 ### 📱 Native Android (Kotlin)
 - Android Studio  
 - Fused Location Provider  
 - Air Location Library  
-- Groupie  
+- Groupie (RecyclerViews)  
 - Shared Preferences  
 - Push Notifications  
 - Background Services  
 
 ### 🌐 Flutter (Dart)
-- GetX  
-- Awesome Notifications  
-- Dartx  
-- Geolocator & Geocoding  
-- Get Storage  
-- Flutter Localization  
-- Flutter Background  
-- URL Launcher  
+- **GetX** (State Management & Routing)  
+- **Awesome Notifications**  
+- **Geolocator** & **Geocoding**  
+- **Get Storage**  
+- **Flutter Background**  
+- **Flutter Localization**  
+- **URL Launcher**  
+- **Responsive UI for both platforms**
 
 ---
 
-## 🖼️ Screenshots
+## 📸 Screenshots
 
-### 📱 Kotlin App (Android)
+### Kotlin App (Android)
 
 | Home Page | All Routes | Live Tracking |
 |-----------|------------|---------------|
 | ![Home](https://i.postimg.cc/0Q91gVXP/image.png) | ![All Routes](https://i.postimg.cc/pTkbPK38/image.png) | ![Live Tracking](https://i.postimg.cc/7hQF2wHZ/image.png) |
 
----
-
-### 🌐 Flutter App (Android & iOS)
+### Flutter App (Android & iOS)
 
 | Home Page | All Routes | Live Tracking |
 |-----------|------------|---------------|
 | ![Home](https://i.postimg.cc/NfB9Jtkz/image.png) | ![All Routes](https://i.postimg.cc/LXF6Jkyb/image.png) | ![Live Tracking](https://i.postimg.cc/L6Q9tFCf/image.png) |
 
-
 ---
 
 ## 🧩 How It Works
 
-1. 🔓 Grant location access
-2. 🗺 Choose origin and destination stations
-3. 📍 Get the nearest station or suggestions based on your address
-4. 📊 View trip details: time, price, path
-5. 🚨 Receive in-trip alerts and navigation instructions
+1. 🔓 Grant location access to detect nearest station.
+2. 🚉 Choose your origin and destination.
+3. 💡 Get suggestions for the closest station to your current or destination location.
+4. 🧭 View route details: shortest/optimal path, total time, price, and number of stations.
+5. 🛎 Receive smart alerts during the trip (line changes, nearing final stop).
+6. 🎫 Display a digital ticket summarizing your trip details.
 
 ---
 
-## 💡 Future Ideas
+## 💡 Future Enhancements
 
-- 🚦 Live metro timing/schedules  
-- 🎟 Online ticket purchasing  
-- 🙋 Voice assistant / accessibility  
-- 🗂 Favorite routes & saved trips  
-- ⭐ Rate lines & stations  
+- 🗣️ Voice assistant & accessibility support  
+- ⭐ Favorite routes & trip history  
+- 📍 Manual station selection from map  
+- 📤 Export trip plan as PDF or image  
+- 🔁 Multi-stop route planning
 
 ---
 
 ## 👨‍💻 Team Members
 
-| 👤 Name            | 🛠️ Role             | 🔗 LinkedIn |
-|--------------------|----------------------|-------------|
-| **Ahmed Hesham Abdelfattah**      | Mobile Developer     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmed-hesham-108214234/) |
-| **Mahmoud Ahmed Fathy**  | Mobile Developer     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](linkedin.com/in/mahmoud-ahmed-fathy) |
-| **Mahmoud elsayed Rageh**    | Mobile Developer     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahmoud-ragehh/) |
-| **Aya Mohamed**    | Mobile Developer     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayamohamedsayed/) |
-| **Saif khaled haroun**    | Mobile Developer     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saif-haroun-711b482a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
+| Name                     | Role              | LinkedIn |
+|--------------------------|-------------------|----------|
+| **Ahmed Hesham Abdelfattah** | Mobile Developer | [LinkedIn](https://www.linkedin.com/in/ahmed-hesham-108214234/) |
+| **Mahmoud Ahmed Fathy**       | Mobile Developer | [LinkedIn](https://www.linkedin.com/in/mahmoud-ahmed-fathy) |
+| **Mahmoud Elsayed Rageh**     | Mobile Developer | [LinkedIn](https://www.linkedin.com/in/mahmoud-ragehh/) |
+| **Aya Mohamed**               | Mobile Developer | [LinkedIn](https://www.linkedin.com/in/ayamohamedsayed/) |
+| **Saif Khaled Haroun**        | Mobile Developer | [LinkedIn](https://www.linkedin.com/in/saif-haroun-711b482a1) |
 
 ---
 
 ## 🙏 Special Thanks
-Thanks to every team member who made this app a reality 🚇  
-We aim to keep improving public transportation tech in Egypt 🇪🇬
+
+Special thanks to every team member who contributed to making **Cairo Metro App** a reality!  
+Together, we’re one step closer to smarter public transportation in Egypt 🇪🇬
 
 ---
 
-](https://www.linkedin.com/in/saif-haroun-711b482a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+## 📄 License
+
+This project is licensed under the **MIT License**.
