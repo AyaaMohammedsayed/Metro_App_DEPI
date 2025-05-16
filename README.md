@@ -1,58 +1,92 @@
-<<<<<<< HEAD
-# metro_app
+<h1 align="center">🚇 Metro Guide App</h1>
 
-A new Flutter project.
+<p align="center">
+A smart bilingual mobile app to navigate metro system – built with  <b>Flutter</b> for both Android and iOS platforms.
+</p>
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-blue" alt="Platform Badge"/>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# Metro_App_DEPI
-# Metro Guide App
-
-## Overview
-Metro Guide is an intuitive and user-friendly mobile application built with Flutter, designed to help users navigate metro stations efficiently. The app allows users to select their starting and destination stations, view nearby stations, check ticket prices based on the number of stations, and receive timely notifications when they approach their destination.
-
-With a focus on simplicity and ease of use, this app is perfect for daily commuters looking for a fast and reliable metro navigation tool.
+</p>
 
 ---
 
-## Features
+## 🌟 Overview
 
-- **Station Selection**: Easily select your starting and destination stations using autocomplete search or dropdown menus.
-- **Nearest Station**: Shows the nearest metro stations based on your current location for quick access.
-- **Dynamic Ticket Pricing**: Ticket prices adjust based on the number of stations between your start and destination points.
-- **Notifications**: Get notified when you are 100 meters away from your destination station, helping you prepare to exit.
-- **Localization**: The app supports both Arabic and English languages, ensuring a seamless experience for users in different regions.
-- **Responsive Design**: The app is designed to work smoothly on both phone and tablet screens, with an adaptive layout for consistent user experience.
+**Metro Guide App** is your intelligent companion for navigating Egypt’s metro network.  
+Whether you're a local or a visitor, the app offers **real-time navigation**, **shortest route planning**, **trip notifications**, and much more – all with a smooth and intuitive interface.
 
 ---
 
-## Metro Application 
+## 🚀 Key Features
+
+-  **Bilingual Support**: Seamless switch between Arabic & English.
+-  **Nearest Station Detection**: Uses GPS to detect your closest metro station.
+-  **Smart Suggestions**: Recommends the station closest to your destination.
+-  **Map View**: Integrated with Google Maps to visualize nearby stations.
+-  **Multiple Route Options**: Choose between shortest distance or fewest transfers.
+-  **Trip Info**: Displays travel time, number of stations, and transfer lines.
+-  **Ticket Price Estimation**: Auto-calculates based on the journey distance.
+-  **Live Location Tracking**: Track your progress along the route.
+-  **Smart Trip Alerts**:
+  - Start trip notification  
+  - Line change reminders  
+  - Approaching destination alerts
+-  **Digital Ticket Screen**: View your trip summary in a clean, printable format.
+-  **Offline Availability**: Major features work without active internet.
+
+---
+
+## 🧠 Tech Stack
+
+### 🔍 Pathfinding
+- **DFS (Depth-First Search)** algorithm for exploring and computing optimal routes.
+
+### 🌐 Flutter (Dart)
+- **GetX** (State Management & Routing)  
+- **Awesome Notifications**  
+- **Geolocator** & **Geocoding**  
+- **Flutter Localization**  
+- **Flutter Shared prefrences**  
+- **Responsive UI for both platforms**
+
+---
+
+## 📸 Screenshots
+
+### Kotlin App (Android)
+
+| Home Page | All Routes | Live Tracking |
+|-----------|------------|---------------|
+| ![Home](https://github.com/AyaaMohammedsayed/Metro_App_DEPI/blob/main/Metro%20mokeup.png) | ![All Routes](https://github.com/AyaaMohammedsayed/Metro_App_DEPI/blob/main/Home.png) | ![Live Tracking](https://github.com/AyaaMohammedsayed/Metro_App_DEPI/blob/main/Premission.jpeg) |
 
 
+---
 
-![Metro App](https://github.com/AyaaMohammedsayed/Metro_App_DEPI/blob/410c3e59ae532d460ec1d0567457ae0074c6355d/Metro%20mokeup.png)
+## 🧩 How It Works
+
+1.  Grant location access to detect nearest station.
+2.  Choose your origin and destination.
+3.  View route details: shortest/optimal path, total time, price, and number of stations.
+4.  Receive smart alerts during the trip (line changes, nearing final stop).
+5.  Display a digital ticket summarizing your trip details.
 
 
+## 👨‍💻 Team Members
 
-## Setup and Installation
+| Name                     | Role              | LinkedIn |
+|--------------------------|-------------------|----------|
+| **Ahmed Hesham Abdelfattah** | Mobile Developer | [LinkedIn](https://www.linkedin.com/in/ahmed-hesham-108214234/) |
+| **Mahmoud Ahmed Fathy**       | Mobile Developer | [LinkedIn](https://www.linkedin.com/in/mahmoud-ahmed-fathy) |
+| **Mahmoud Elsayed Rageh**     | Mobile Developer | [LinkedIn](https://www.linkedin.com/in/mahmoud-ragehh/) |
+| **Aya Mohamed**               | Mobile Developer | [LinkedIn](https://www.linkedin.com/in/ayamohamedsayed/) |
+| **Saif Khaled Haroun**        | Mobile Developer | [LinkedIn](https://www.linkedin.com/in/saif-haroun-711b482a1) |
 
-To get the Metro Guide app up and running on your local machine, follow these steps:
+---
 
-### 1. Clone the Repository
+## 🙏 Special Thanks
 
-Clone the project repository from GitHub:
+Special thanks to every team member who contributed to making **Cairo Metro App** a reality!  
+Together, we’re one step closer to smarter public transportation in Egypt 🇪🇬
 
-```bash
-git clone https://github.com/your-username/metro-guide-app.git
->>>>>>> origin/main
+
